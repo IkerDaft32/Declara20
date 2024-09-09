@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("service_t404cl2");  // Reemplaza con tu User ID de EmailJS
+    })();
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Aceptas este desafío de amor?</h1>
+        <p>Haz clic en el botón para comenzar.</p>
+        <button id="startBtn">Comenzar</button>
+        <div id="content" style="display:none;">
+            <div class="question-box">
+                <p id="question"></p>
+                <p id="hint" class="hint"></p>
+            </div>
+            <input type="text" id="answer" placeholder="Escribe tu respuesta...">
+            <button id="nextBtn">Enviar respuesta</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
